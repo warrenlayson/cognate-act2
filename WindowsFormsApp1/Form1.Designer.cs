@@ -174,9 +174,9 @@ namespace WindowsFormsApp1
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(420, 31);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(101, 20);
+            this.label7.Size = new System.Drawing.Size(95, 30);
             this.label7.TabIndex = 17;
-            this.label7.Text = "Middle Name";
+            this.label7.Text = "Gender";
             // 
             // label8
             // 
@@ -191,7 +191,7 @@ namespace WindowsFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(362, 185);
+            this.ClientSize = new System.Drawing.Size(621, 280);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button1);
