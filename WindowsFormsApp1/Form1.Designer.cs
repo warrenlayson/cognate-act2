@@ -110,9 +110,9 @@ namespace WindowsFormsApp1
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(279, 31);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 20);
+            this.label3.Size = new System.Drawing.Size(101, 20);
             this.label3.TabIndex = 7;
-            this.label3.Text = "HALLO";
+            this.label3.Text = "Middle Name";
             // 
             // label4
             // 
