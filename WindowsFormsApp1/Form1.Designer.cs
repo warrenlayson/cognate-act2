@@ -237,7 +237,6 @@ namespace WindowsFormsApp1
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = false;
             // 
-
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Goldenrod;
@@ -282,6 +281,7 @@ namespace WindowsFormsApp1
             this.button4.TabIndex = 17;
             this.button4.Text = "Exit";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // textBox15
             // 
