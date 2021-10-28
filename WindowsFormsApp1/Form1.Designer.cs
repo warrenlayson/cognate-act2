@@ -296,6 +296,7 @@ namespace WindowsFormsApp1
             this.textBox15.Size = new System.Drawing.Size(174, 25);
             this.textBox15.TabIndex = 0;
             this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox15.TextChanged += new System.EventHandler(this.textBox15_TextChanged);
             // 
             // textBox16
             // 
