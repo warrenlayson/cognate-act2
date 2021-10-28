@@ -183,8 +183,9 @@ namespace WindowsFormsApp1
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(417, 31);
             this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(93, 30);
             this.label7.TabIndex = 17;
-            this.label7.Text = "Gender";
+            this.label7.Text = "Hotdog";
             // 
             // label8
             // 
