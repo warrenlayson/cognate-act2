@@ -215,6 +215,7 @@ namespace WindowsFormsApp1
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = false;
             // 
+
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Goldenrod;
