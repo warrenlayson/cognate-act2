@@ -31,24 +31,24 @@ namespace WindowsFormsApp1
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserForm));
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.MiddleName = new System.Windows.Forms.TextBox();
+            this.HouseNo = new System.Windows.Forms.TextBox();
+            this.StreetName = new System.Windows.Forms.TextBox();
+            this.DistrictName = new System.Windows.Forms.TextBox();
+            this.BrgyName = new System.Windows.Forms.TextBox();
+            this.CityName = new System.Windows.Forms.TextBox();
+            this.Province = new System.Windows.Forms.TextBox();
+            this.Zip = new System.Windows.Forms.TextBox();
+            this.Gender = new System.Windows.Forms.TextBox();
+            this.Birthday = new System.Windows.Forms.TextBox();
+            this.Age = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.LastName = new System.Windows.Forms.TextBox();
+            this.FirstName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -59,168 +59,169 @@ namespace WindowsFormsApp1
             this.textBox1.Location = new System.Drawing.Point(993, 29);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 16);
+            this.textBox1.Size = new System.Drawing.Size(216, 20);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox4
+            // MiddleName
             // 
-            this.textBox4.BackColor = System.Drawing.Color.LightGray;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox4.Location = new System.Drawing.Point(838, 162);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(184, 19);
-            this.textBox4.TabIndex = 3;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MiddleName.BackColor = System.Drawing.Color.LightGray;
+            this.MiddleName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MiddleName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MiddleName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.MiddleName.Location = new System.Drawing.Point(838, 162);
+            this.MiddleName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MiddleName.Multiline = true;
+            this.MiddleName.Name = "MiddleName";
+            this.MiddleName.Size = new System.Drawing.Size(184, 19);
+            this.MiddleName.TabIndex = 3;
+            this.MiddleName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MiddleName.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
-            // textBox5
+            // HouseNo
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox5.Location = new System.Drawing.Point(438, 243);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(71, 25);
-            this.textBox5.TabIndex = 4;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.HouseNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.HouseNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.HouseNo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.HouseNo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HouseNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.HouseNo.Location = new System.Drawing.Point(438, 243);
+            this.HouseNo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.HouseNo.Multiline = true;
+            this.HouseNo.Name = "HouseNo";
+            this.HouseNo.Size = new System.Drawing.Size(71, 25);
+            this.HouseNo.TabIndex = 4;
+            this.HouseNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.HouseNo.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
-            // textBox6
+            // StreetName
             // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox6.Location = new System.Drawing.Point(529, 243);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(135, 25);
-            this.textBox6.TabIndex = 5;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.StreetName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.StreetName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.StreetName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StreetName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.StreetName.Location = new System.Drawing.Point(529, 243);
+            this.StreetName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.StreetName.Multiline = true;
+            this.StreetName.Name = "StreetName";
+            this.StreetName.Size = new System.Drawing.Size(135, 25);
+            this.StreetName.TabIndex = 5;
+            this.StreetName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.StreetName.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
-            // textBox7
+            // DistrictName
             // 
-            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox7.Location = new System.Drawing.Point(682, 243);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(112, 25);
-            this.textBox7.TabIndex = 6;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            this.DistrictName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DistrictName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DistrictName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DistrictName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DistrictName.Location = new System.Drawing.Point(682, 243);
+            this.DistrictName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.DistrictName.Multiline = true;
+            this.DistrictName.Name = "DistrictName";
+            this.DistrictName.Size = new System.Drawing.Size(112, 25);
+            this.DistrictName.TabIndex = 6;
+            this.DistrictName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.DistrictName.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
-            // textBox8
+            // BrgyName
             // 
-            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox8.Location = new System.Drawing.Point(817, 243);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(210, 25);
-            this.textBox8.TabIndex = 7;
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            this.BrgyName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BrgyName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BrgyName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BrgyName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BrgyName.Location = new System.Drawing.Point(817, 243);
+            this.BrgyName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BrgyName.Multiline = true;
+            this.BrgyName.Name = "BrgyName";
+            this.BrgyName.Size = new System.Drawing.Size(210, 25);
+            this.BrgyName.TabIndex = 7;
+            this.BrgyName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BrgyName.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
-            // textBox9
+            // CityName
             // 
-            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox9.Location = new System.Drawing.Point(438, 305);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(169, 24);
-            this.textBox9.TabIndex = 8;
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.CityName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.CityName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CityName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CityName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.CityName.Location = new System.Drawing.Point(438, 305);
+            this.CityName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.CityName.Multiline = true;
+            this.CityName.Name = "CityName";
+            this.CityName.Size = new System.Drawing.Size(169, 24);
+            this.CityName.TabIndex = 8;
+            this.CityName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox10
+            // Province
             // 
-            this.textBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox10.Location = new System.Drawing.Point(628, 305);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(221, 24);
-            this.textBox10.TabIndex = 9;
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Province.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Province.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Province.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Province.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Province.Location = new System.Drawing.Point(628, 305);
+            this.Province.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Province.Multiline = true;
+            this.Province.Name = "Province";
+            this.Province.Size = new System.Drawing.Size(221, 24);
+            this.Province.TabIndex = 9;
+            this.Province.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox11
+            // Zip
             // 
-            this.textBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox11.Location = new System.Drawing.Point(869, 305);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(153, 24);
-            this.textBox11.TabIndex = 10;
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Zip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Zip.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Zip.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Zip.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Zip.Location = new System.Drawing.Point(869, 305);
+            this.Zip.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Zip.Multiline = true;
+            this.Zip.Name = "Zip";
+            this.Zip.Size = new System.Drawing.Size(153, 24);
+            this.Zip.TabIndex = 10;
+            this.Zip.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox12
+            // Gender
             // 
-            this.textBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox12.Location = new System.Drawing.Point(438, 386);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(152, 23);
-            this.textBox12.TabIndex = 11;
-            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Gender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Gender.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Gender.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Gender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Gender.Location = new System.Drawing.Point(438, 386);
+            this.Gender.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Gender.Multiline = true;
+            this.Gender.Name = "Gender";
+            this.Gender.Size = new System.Drawing.Size(152, 23);
+            this.Gender.TabIndex = 11;
+            this.Gender.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox13
+            // Birthday
             // 
-            this.textBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox13.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox13.Location = new System.Drawing.Point(628, 386);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(257, 23);
-            this.textBox13.TabIndex = 12;
-            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Birthday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Birthday.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Birthday.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Birthday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Birthday.Location = new System.Drawing.Point(628, 386);
+            this.Birthday.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Birthday.Multiline = true;
+            this.Birthday.Name = "Birthday";
+            this.Birthday.Size = new System.Drawing.Size(257, 23);
+            this.Birthday.TabIndex = 12;
+            this.Birthday.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox14
+            // Age
             // 
-            this.textBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox14.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox14.Location = new System.Drawing.Point(916, 386);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox14.Multiline = true;
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(106, 23);
-            this.textBox14.TabIndex = 13;
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Age.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Age.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Age.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Age.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Age.Location = new System.Drawing.Point(916, 386);
+            this.Age.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Age.Multiline = true;
+            this.Age.Name = "Age";
+            this.Age.Size = new System.Drawing.Size(106, 23);
+            this.Age.TabIndex = 13;
+            this.Age.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button1
             // 
@@ -236,6 +237,7 @@ namespace WindowsFormsApp1
             this.button1.TabIndex = 14;
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button2
             // 
@@ -296,38 +298,39 @@ namespace WindowsFormsApp1
             this.textBox15.TabIndex = 0;
             this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox16
+            // LastName
             // 
-            this.textBox16.BackColor = System.Drawing.Color.LightGray;
-            this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox16.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox16.Location = new System.Drawing.Point(448, 162);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(153, 19);
-            this.textBox16.TabIndex = 1;
-            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LastName.BackColor = System.Drawing.Color.LightGray;
+            this.LastName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.LastName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LastName.Location = new System.Drawing.Point(448, 162);
+            this.LastName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.LastName.Multiline = true;
+            this.LastName.Name = "LastName";
+            this.LastName.Size = new System.Drawing.Size(153, 19);
+            this.LastName.TabIndex = 1;
+            this.LastName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LastName.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
             // 
-            // textBox17
+            // FirstName
             // 
-            this.textBox17.BackColor = System.Drawing.Color.LightGray;
-            this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox17.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox17.Location = new System.Drawing.Point(618, 162);
-            this.textBox17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox17.Multiline = true;
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(198, 19);
-            this.textBox17.TabIndex = 2;
-            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox17.TextChanged += new System.EventHandler(this.textBox17_TextChanged);
+            this.FirstName.BackColor = System.Drawing.Color.LightGray;
+            this.FirstName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.FirstName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.FirstName.Location = new System.Drawing.Point(618, 162);
+            this.FirstName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.FirstName.Multiline = true;
+            this.FirstName.Name = "FirstName";
+            this.FirstName.Size = new System.Drawing.Size(198, 19);
+            this.FirstName.TabIndex = 2;
+            this.FirstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.FirstName.TextChanged += new System.EventHandler(this.textBox17_TextChanged);
             // 
             // UserForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
@@ -337,19 +340,19 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox16);
+            this.Controls.Add(this.Age);
+            this.Controls.Add(this.Birthday);
+            this.Controls.Add(this.Gender);
+            this.Controls.Add(this.Zip);
+            this.Controls.Add(this.Province);
+            this.Controls.Add(this.CityName);
+            this.Controls.Add(this.BrgyName);
+            this.Controls.Add(this.DistrictName);
+            this.Controls.Add(this.StreetName);
+            this.Controls.Add(this.HouseNo);
+            this.Controls.Add(this.MiddleName);
+            this.Controls.Add(this.FirstName);
+            this.Controls.Add(this.LastName);
             this.Controls.Add(this.textBox15);
             this.Controls.Add(this.textBox1);
             this.DoubleBuffered = true;
@@ -368,24 +371,24 @@ namespace WindowsFormsApp1
         #endregion
 
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox MiddleName;
+        private System.Windows.Forms.TextBox HouseNo;
+        private System.Windows.Forms.TextBox StreetName;
+        private System.Windows.Forms.TextBox DistrictName;
+        private System.Windows.Forms.TextBox BrgyName;
+        private System.Windows.Forms.TextBox CityName;
+        private System.Windows.Forms.TextBox Province;
+        private System.Windows.Forms.TextBox Zip;
+        private System.Windows.Forms.TextBox Gender;
+        private System.Windows.Forms.TextBox Birthday;
+        private System.Windows.Forms.TextBox Age;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox LastName;
+        private System.Windows.Forms.TextBox FirstName;
     }
 }
 
