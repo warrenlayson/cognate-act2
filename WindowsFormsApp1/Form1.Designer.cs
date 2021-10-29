@@ -4,7 +4,7 @@ namespace WindowsFormsApp1
     partial class UserForm
     {
         /// <summary>
-        /// Required designer variable.
+        /// Required designer variable. 
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
