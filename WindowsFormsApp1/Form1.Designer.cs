@@ -40,16 +40,17 @@ namespace WindowsFormsApp1
             this.zip = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.age = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.add = new System.Windows.Forms.Button();
+            this.update = new System.Windows.Forms.Button();
+            this.delete = new System.Windows.Forms.Button();
+            this.exit = new System.Windows.Forms.Button();
             this.textBoxID = new System.Windows.Forms.TextBox();
             this.lastname = new System.Windows.Forms.TextBox();
             this.firstname = new System.Windows.Forms.TextBox();
             this.birthday = new System.Windows.Forms.DateTimePicker();
             this.gender = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.read = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,7 +82,7 @@ namespace WindowsFormsApp1
             this.houseno.Size = new System.Drawing.Size(71, 25);
             this.houseno.TabIndex = 4;
             this.houseno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.houseno.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            
             // 
             // street
             // 
@@ -96,7 +97,7 @@ namespace WindowsFormsApp1
             this.street.Size = new System.Drawing.Size(135, 25);
             this.street.TabIndex = 5;
             this.street.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.street.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            
             // 
             // district
             // 
@@ -111,7 +112,7 @@ namespace WindowsFormsApp1
             this.district.Size = new System.Drawing.Size(112, 25);
             this.district.TabIndex = 6;
             this.district.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.district.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+           
             // 
             // barangay
             // 
@@ -126,7 +127,7 @@ namespace WindowsFormsApp1
             this.barangay.Size = new System.Drawing.Size(210, 25);
             this.barangay.TabIndex = 7;
             this.barangay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.barangay.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            
             // 
             // city
             // 
@@ -141,6 +142,7 @@ namespace WindowsFormsApp1
             this.city.Size = new System.Drawing.Size(169, 24);
             this.city.TabIndex = 8;
             this.city.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+           
             // 
             // province
             // 
@@ -155,7 +157,7 @@ namespace WindowsFormsApp1
             this.province.Size = new System.Drawing.Size(216, 24);
             this.province.TabIndex = 9;
             this.province.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.province.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
+           
             // 
             // zip
             // 
@@ -167,9 +169,10 @@ namespace WindowsFormsApp1
             this.zip.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.zip.Multiline = true;
             this.zip.Name = "zip";
-            this.zip.Size = new System.Drawing.Size(153, 24);
+            this.zip.Size = new System.Drawing.Size(158, 24);
             this.zip.TabIndex = 10;
             this.zip.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            
             // 
             // textBox12
             // 
@@ -198,68 +201,70 @@ namespace WindowsFormsApp1
             this.age.Size = new System.Drawing.Size(111, 23);
             this.age.TabIndex = 13;
             this.age.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.age.TextChanged += new System.EventHandler(this.textBox14_TextChanged);
+         
             // 
-            // button1
+            // add
             // 
-            this.button1.BackColor = System.Drawing.Color.Goldenrod;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(507, 457);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(71, 27);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = false;
+            this.add.BackColor = System.Drawing.Color.Goldenrod;
+            this.add.FlatAppearance.BorderSize = 0;
+            this.add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add.ForeColor = System.Drawing.Color.White;
+            this.add.Location = new System.Drawing.Point(466, 457);
+            this.add.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.add.Name = "add";
+            this.add.Size = new System.Drawing.Size(88, 30);
+            this.add.TabIndex = 14;
+            this.add.Text = "Add";
+            this.add.UseVisualStyleBackColor = false;
+            
             // 
-
-            // button2
+            // update
             // 
-            this.button2.BackColor = System.Drawing.Color.Goldenrod;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(628, 454);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(72, 30);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
+            this.update.BackColor = System.Drawing.Color.Goldenrod;
+            this.update.FlatAppearance.BorderSize = 0;
+            this.update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.update.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update.ForeColor = System.Drawing.Color.White;
+            this.update.Location = new System.Drawing.Point(582, 457);
+            this.update.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.update.Name = "update";
+            this.update.Size = new System.Drawing.Size(81, 30);
+            this.update.TabIndex = 15;
+            this.update.Text = "Update";
+            this.update.UseVisualStyleBackColor = false;
+            
             // 
-            // button3
+            // delete
             // 
-            this.button3.BackColor = System.Drawing.Color.Goldenrod;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(750, 454);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(77, 27);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
+            this.delete.BackColor = System.Drawing.Color.Goldenrod;
+            this.delete.FlatAppearance.BorderSize = 0;
+            this.delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.delete.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delete.ForeColor = System.Drawing.Color.White;
+            this.delete.Location = new System.Drawing.Point(830, 457);
+            this.delete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.delete.Name = "delete";
+            this.delete.Size = new System.Drawing.Size(85, 27);
+            this.delete.TabIndex = 16;
+            this.delete.Text = "Delete";
+            this.delete.UseVisualStyleBackColor = false;
+           
             // 
-            // button4
+            // exit
             // 
-            this.button4.BackColor = System.Drawing.Color.Goldenrod;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(869, 454);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(76, 27);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "Exit";
-            this.button4.UseVisualStyleBackColor = false;
+            this.exit.BackColor = System.Drawing.Color.Goldenrod;
+            this.exit.FlatAppearance.BorderSize = 0;
+            this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exit.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exit.ForeColor = System.Drawing.Color.White;
+            this.exit.Location = new System.Drawing.Point(948, 457);
+            this.exit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(79, 27);
+            this.exit.TabIndex = 17;
+            this.exit.Text = "Exit";
+            this.exit.UseVisualStyleBackColor = false;
             // 
             // textBoxID
             // 
@@ -274,7 +279,7 @@ namespace WindowsFormsApp1
             this.textBoxID.Size = new System.Drawing.Size(174, 31);
             this.textBoxID.TabIndex = 0;
             this.textBoxID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBoxID.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            
             // 
             // lastname
             // 
@@ -289,7 +294,7 @@ namespace WindowsFormsApp1
             this.lastname.Size = new System.Drawing.Size(152, 25);
             this.lastname.TabIndex = 1;
             this.lastname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.lastname.TextChanged += new System.EventHandler(this.lastname_TextChanged);
+           
             // 
             // firstname
             // 
@@ -304,7 +309,7 @@ namespace WindowsFormsApp1
             this.firstname.Size = new System.Drawing.Size(198, 25);
             this.firstname.TabIndex = 2;
             this.firstname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.firstname.TextChanged += new System.EventHandler(this.textBox17_TextChanged);
+            
             // 
             // birthday
             // 
@@ -314,7 +319,7 @@ namespace WindowsFormsApp1
             this.birthday.Name = "birthday";
             this.birthday.Size = new System.Drawing.Size(256, 26);
             this.birthday.TabIndex = 18;
-            this.birthday.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            
             // 
             // gender
             // 
@@ -325,7 +330,7 @@ namespace WindowsFormsApp1
             this.gender.Name = "gender";
             this.gender.Size = new System.Drawing.Size(152, 28);
             this.gender.TabIndex = 19;
-            this.gender.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+           
             // 
             // dataGridView1
             // 
@@ -337,6 +342,23 @@ namespace WindowsFormsApp1
             this.dataGridView1.Size = new System.Drawing.Size(910, 193);
             this.dataGridView1.TabIndex = 20;
             // 
+            // read
+            // 
+            this.read.BackColor = System.Drawing.Color.Goldenrod;
+            this.read.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.read.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.read.FlatAppearance.BorderSize = 0;
+            this.read.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.read.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.read.ForeColor = System.Drawing.Color.White;
+            this.read.Location = new System.Drawing.Point(706, 455);
+            this.read.Name = "read";
+            this.read.Size = new System.Drawing.Size(88, 32);
+            this.read.TabIndex = 21;
+            this.read.Text = "Read";
+            this.read.UseVisualStyleBackColor = false;
+           
+            // 
             // UserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -345,13 +367,14 @@ namespace WindowsFormsApp1
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1100, 749);
+            this.Controls.Add(this.read);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.gender);
             this.Controls.Add(this.birthday);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.exit);
+            this.Controls.Add(this.delete);
+            this.Controls.Add(this.update);
+            this.Controls.Add(this.add);
             this.Controls.Add(this.age);
             this.Controls.Add(this.textBox12);
             this.Controls.Add(this.zip);
@@ -390,16 +413,17 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.TextBox zip;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox age;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button add;
+        private System.Windows.Forms.Button update;
+        private System.Windows.Forms.Button delete;
+        private System.Windows.Forms.Button exit;
         private System.Windows.Forms.TextBox textBoxID;
         private System.Windows.Forms.TextBox lastname;
         private System.Windows.Forms.TextBox firstname;
         private System.Windows.Forms.DateTimePicker birthday;
         private System.Windows.Forms.ComboBox gender;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button read;
     }
 }
 
