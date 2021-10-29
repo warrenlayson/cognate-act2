@@ -283,6 +283,7 @@ namespace WindowsFormsApp1
             this.button4.TabIndex = 17;
             this.button4.Text = "Exit";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // textBox15
             // 
@@ -297,6 +298,7 @@ namespace WindowsFormsApp1
             this.textBox15.Size = new System.Drawing.Size(174, 25);
             this.textBox15.TabIndex = 0;
             this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox15.TextChanged += new System.EventHandler(this.textBox15_TextChanged);
             // 
             // LastName
             // 
