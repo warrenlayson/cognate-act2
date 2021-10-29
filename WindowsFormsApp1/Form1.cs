@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
+using MySql.Data.MySqlClient;
 
 namespace WindowsFormsApp1
 {
@@ -15,6 +16,9 @@ namespace WindowsFormsApp1
     public partial class UserForm : Form
     {
         string connectionString = ConfigurationManager.ConnectionStrings["Mysql"].ConnectionString;
+
+        string mycon = "datasource=localhost;username=root;password=;database=act2";
+
         public UserForm()
         {
             InitializeComponent();
@@ -25,7 +29,12 @@ namespace WindowsFormsApp1
 
         }
 
-        /* private void button1_Click(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
@@ -119,6 +128,29 @@ namespace WindowsFormsApp1
         {
 
         }
-        */
+
+        private void update_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void read_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string query = "Select * from users";
+                MySqlConnection mycon2 = new MySqlConnection(mycon);
+                MySqlCommand mycommand = new MySqlCommand(query, mycon2);
+                MySqlDataAdapter myAdapter = new MySqlDataAdapter();
+                myAdapter.SelectCommand = mycommand;
+                DataTable dtable = new DataTable();
+                myAdapter.Fill(dtable);
+                dataGridView1.DataSource = dtable;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
