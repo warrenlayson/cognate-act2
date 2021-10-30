@@ -191,6 +191,7 @@ namespace WindowsFormsApp1
             this.age.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.age.Multiline = true;
             this.age.Name = "age";
+            this.age.ReadOnly = true;
             this.age.Size = new System.Drawing.Size(111, 23);
             this.age.TabIndex = 13;
             this.age.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -269,6 +270,7 @@ namespace WindowsFormsApp1
             this.textBoxID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxID.Multiline = true;
             this.textBoxID.Name = "textBoxID";
+            this.textBoxID.ReadOnly = true;
             this.textBoxID.Size = new System.Drawing.Size(174, 31);
             this.textBoxID.TabIndex = 0;
             this.textBoxID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -323,6 +325,7 @@ namespace WindowsFormsApp1
             this.gender.Name = "gender";
             this.gender.Size = new System.Drawing.Size(152, 26);
             this.gender.TabIndex = 19;
+            this.gender.SelectedIndexChanged += new System.EventHandler(this.gender_SelectedIndexChanged);
             // 
             // dataGridView1
             // 

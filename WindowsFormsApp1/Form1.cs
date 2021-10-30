@@ -176,5 +176,10 @@ namespace WindowsFormsApp1
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void gender_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
