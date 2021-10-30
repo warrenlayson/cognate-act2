@@ -36,11 +36,11 @@ namespace WindowsFormsApp1
             update.Enabled = true;
         }
 
-        private void dataGridView_SelectionChanged(object sender, EventArgs e)
+  /*      private void dataGridView_SelectionChanged(object sender, EventArgs e)
         {
 
         }
-
+  */
 
         private void read_Click(object sender, EventArgs e)
         {
@@ -134,6 +134,26 @@ namespace WindowsFormsApp1
         //    birthday.Text = gridViewRow.Cells[11].Value.ToString();
             age.Text = gridViewRow.Cells[13].Value.ToString();
 
+        }
+
+        private void delete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string query = "Delete crud_tbl1 set lastname = '" + this.lastname.Text + "', firstname = '" + this.firstname.Text + "', middlename = '" + this.middlename.Text + "', houseno = '" + this.houseno.Text + "', street ='" + this.street.Text + "', district = '" + this.district.Text + "', barangay = '" + this.barangay.Text + "', city = '" + this.city.Text + "', province = '" + this.province.Text + "', zip = '" + this.zip.Text + "', gender = '" + this.gender.Text + "', birthday = '" + this.birthday.Text + "', age = '" + this.age.Text + "' ;";
+                MySqlConnection mycon2 = new MySqlConnection(connectionString);
+                MySqlCommand mycommand = new MySqlCommand(query, mycon2);
+                MySqlDataReader MyReader1;
+                mycon2.Open();
+                MyReader1 = mycommand.ExecuteReader();
+                MessageBox.Show("Data is Deleted");
+
+                mycon2.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

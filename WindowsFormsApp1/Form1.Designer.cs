@@ -240,6 +240,7 @@ namespace WindowsFormsApp1
             this.delete.TabIndex = 16;
             this.delete.Text = "Delete";
             this.delete.UseVisualStyleBackColor = false;
+            this.delete.Click += new System.EventHandler(this.delete_Click);
             // 
             // exit
             // 
