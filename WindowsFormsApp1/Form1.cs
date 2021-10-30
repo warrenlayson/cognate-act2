@@ -28,7 +28,6 @@ namespace WindowsFormsApp1
             this.dataGridView1.ForeColor = Color.Black;
         }
        
-
   
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
