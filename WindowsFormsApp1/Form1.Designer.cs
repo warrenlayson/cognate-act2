@@ -255,6 +255,7 @@ namespace WindowsFormsApp1
             this.exit.TabIndex = 17;
             this.exit.Text = "Exit";
             this.exit.UseVisualStyleBackColor = false;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // textBoxID
             // 
@@ -306,6 +307,7 @@ namespace WindowsFormsApp1
             this.birthday.Name = "birthday";
             this.birthday.Size = new System.Drawing.Size(256, 24);
             this.birthday.TabIndex = 18;
+            this.birthday.ValueChanged += new System.EventHandler(this.birthday_ValueChanged);
             // 
             // gender
             // 
@@ -313,7 +315,6 @@ namespace WindowsFormsApp1
             this.gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.gender.FormattingEnabled = true;
             this.gender.Items.AddRange(new object[] {
-            "-Select-",
             "Female",
             "Male"});
             this.gender.Location = new System.Drawing.Point(438, 383);
@@ -329,15 +330,16 @@ namespace WindowsFormsApp1
             this.dataGridView1.Location = new System.Drawing.Point(93, 518);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(910, 193);
             this.dataGridView1.TabIndex = 20;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // read
             // 
             this.read.BackColor = System.Drawing.Color.Goldenrod;
             this.read.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.read.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.read.FlatAppearance.BorderSize = 0;
             this.read.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.read.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -348,6 +350,7 @@ namespace WindowsFormsApp1
             this.read.TabIndex = 21;
             this.read.Text = "Read";
             this.read.UseVisualStyleBackColor = false;
+            this.read.Click += new System.EventHandler(this.read_Click);
             // 
             // UserForm
             // 
