@@ -225,6 +225,7 @@ namespace WindowsFormsApp1
             this.update.TabIndex = 15;
             this.update.Text = "Update";
             this.update.UseVisualStyleBackColor = false;
+            this.update.Click += new System.EventHandler(this.update_Click);
             // 
             // delete
             // 
