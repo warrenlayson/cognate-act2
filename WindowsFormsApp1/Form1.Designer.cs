@@ -58,7 +58,7 @@ namespace WindowsFormsApp1
             // 
             this.middlename.BackColor = System.Drawing.Color.Gainsboro;
             this.middlename.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.middlename.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.middlename.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.middlename.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.middlename.Location = new System.Drawing.Point(838, 162);
             this.middlename.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -73,7 +73,7 @@ namespace WindowsFormsApp1
             this.houseno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.houseno.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.houseno.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.houseno.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.houseno.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.houseno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.houseno.Location = new System.Drawing.Point(438, 243);
             this.houseno.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -87,7 +87,7 @@ namespace WindowsFormsApp1
             // 
             this.street.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.street.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.street.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.street.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.street.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.street.Location = new System.Drawing.Point(528, 243);
             this.street.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -101,7 +101,7 @@ namespace WindowsFormsApp1
             // 
             this.district.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.district.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.district.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.district.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.district.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.district.Location = new System.Drawing.Point(682, 243);
             this.district.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -115,7 +115,7 @@ namespace WindowsFormsApp1
             // 
             this.barangay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.barangay.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.barangay.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barangay.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barangay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.barangay.Location = new System.Drawing.Point(817, 243);
             this.barangay.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -129,7 +129,7 @@ namespace WindowsFormsApp1
             // 
             this.city.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.city.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.city.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.city.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.city.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.city.Location = new System.Drawing.Point(438, 305);
             this.city.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -143,7 +143,7 @@ namespace WindowsFormsApp1
             // 
             this.province.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.province.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.province.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.province.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.province.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.province.Location = new System.Drawing.Point(628, 305);
             this.province.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -157,7 +157,7 @@ namespace WindowsFormsApp1
             // 
             this.zip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.zip.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.zip.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.zip.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.zip.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.zip.Location = new System.Drawing.Point(869, 305);
             this.zip.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -171,7 +171,7 @@ namespace WindowsFormsApp1
             // 
             this.textBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBox12.Location = new System.Drawing.Point(438, 386);
             this.textBox12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -185,7 +185,7 @@ namespace WindowsFormsApp1
             // 
             this.age.BackColor = System.Drawing.Color.Gainsboro;
             this.age.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.age.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.age.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.age.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.age.Location = new System.Drawing.Point(916, 386);
             this.age.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -194,16 +194,13 @@ namespace WindowsFormsApp1
             this.age.Size = new System.Drawing.Size(111, 23);
             this.age.TabIndex = 13;
             this.age.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-
-            this.age.TextChanged += new System.EventHandler(this.age_TextChanged);
-
             // 
             // add
             // 
             this.add.BackColor = System.Drawing.Color.Goldenrod;
             this.add.FlatAppearance.BorderSize = 0;
             this.add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.add.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add.ForeColor = System.Drawing.Color.White;
             this.add.Location = new System.Drawing.Point(466, 457);
             this.add.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -212,16 +209,14 @@ namespace WindowsFormsApp1
             this.add.TabIndex = 14;
             this.add.Text = "Add";
             this.add.UseVisualStyleBackColor = false;
-
-            this.add.Click += new System.EventHandler(this.add_Click_1);
-
+            this.add.Click += new System.EventHandler(this.add_Click);
             // 
             // update
             // 
             this.update.BackColor = System.Drawing.Color.Goldenrod;
             this.update.FlatAppearance.BorderSize = 0;
             this.update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.update.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.update.ForeColor = System.Drawing.Color.White;
             this.update.Location = new System.Drawing.Point(582, 457);
             this.update.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -230,14 +225,13 @@ namespace WindowsFormsApp1
             this.update.TabIndex = 15;
             this.update.Text = "Update";
             this.update.UseVisualStyleBackColor = false;
-            this.update.Click += new System.EventHandler(this.update_Click);
             // 
             // delete
             // 
             this.delete.BackColor = System.Drawing.Color.Goldenrod;
             this.delete.FlatAppearance.BorderSize = 0;
             this.delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.delete.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delete.ForeColor = System.Drawing.Color.White;
             this.delete.Location = new System.Drawing.Point(830, 457);
             this.delete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -252,7 +246,7 @@ namespace WindowsFormsApp1
             this.exit.BackColor = System.Drawing.Color.Goldenrod;
             this.exit.FlatAppearance.BorderSize = 0;
             this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exit.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exit.ForeColor = System.Drawing.Color.White;
             this.exit.Location = new System.Drawing.Point(948, 457);
             this.exit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -261,13 +255,12 @@ namespace WindowsFormsApp1
             this.exit.TabIndex = 17;
             this.exit.Text = "Exit";
             this.exit.UseVisualStyleBackColor = false;
-            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // textBoxID
             // 
             this.textBoxID.BackColor = System.Drawing.Color.Gainsboro;
             this.textBoxID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxID.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.textBoxID.Location = new System.Drawing.Point(848, 55);
             this.textBoxID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -281,7 +274,7 @@ namespace WindowsFormsApp1
             // 
             this.lastname.BackColor = System.Drawing.Color.LightGray;
             this.lastname.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lastname.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lastname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lastname.Location = new System.Drawing.Point(438, 162);
             this.lastname.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -295,7 +288,7 @@ namespace WindowsFormsApp1
             // 
             this.firstname.BackColor = System.Drawing.Color.LightGray;
             this.firstname.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.firstname.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.firstname.Location = new System.Drawing.Point(618, 162);
             this.firstname.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -308,14 +301,11 @@ namespace WindowsFormsApp1
             // birthday
             // 
             this.birthday.CalendarMonthBackground = System.Drawing.Color.White;
-            this.birthday.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.birthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.birthday.Location = new System.Drawing.Point(628, 383);
             this.birthday.Name = "birthday";
-            this.birthday.Size = new System.Drawing.Size(256, 26);
+            this.birthday.Size = new System.Drawing.Size(256, 24);
             this.birthday.TabIndex = 18;
-
-            this.birthday.ValueChanged += new System.EventHandler(this.birthday_ValueChanged);
-
             // 
             // gender
             // 
@@ -350,7 +340,7 @@ namespace WindowsFormsApp1
             this.read.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.read.FlatAppearance.BorderSize = 0;
             this.read.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.read.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.read.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.read.ForeColor = System.Drawing.Color.White;
             this.read.Location = new System.Drawing.Point(706, 455);
             this.read.Name = "read";
@@ -358,7 +348,6 @@ namespace WindowsFormsApp1
             this.read.TabIndex = 21;
             this.read.Text = "Read";
             this.read.UseVisualStyleBackColor = false;
-            this.read.Click += new System.EventHandler(this.read_Click);
             // 
             // UserForm
             // 
@@ -390,7 +379,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.lastname);
             this.Controls.Add(this.textBoxID);
             this.DoubleBuffered = true;
-            this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

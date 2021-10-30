@@ -35,17 +35,18 @@ namespace WindowsFormsApp1
         {
 
             update.Enabled = false;
-        }
-
 
             //Change DataGridView Font Color to Black
             this.dataGridView1.ForeColor = Color.Black;
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+
+
+        private void add_Click(object sender, EventArgs e)
         {
 
         }
+  
 
 
         private void button1_Click(object sender, EventArgs e)
@@ -197,12 +198,8 @@ namespace WindowsFormsApp1
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             update.Enabled = true;
-
-        private void update_Click(object sender, EventArgs e)
-        {
-            
-
         }
+
 
         private void read_Click(object sender, EventArgs e)
         {
@@ -220,17 +217,7 @@ namespace WindowsFormsApp1
 
                 dataGridView1.DataSource = dtable;
             }
-            catch (Exception ex)
-
-                string query = "Select * from users";
-                MySqlConnection mycon2 = new MySqlConnection(mycon);
-                MySqlCommand mycommand = new MySqlCommand(query, mycon2);
-                MySqlDataAdapter myAdapter = new MySqlDataAdapter();
-                myAdapter.SelectCommand = mycommand;
-                DataTable dtable = new DataTable();
-                myAdapter.Fill(dtable);
-                dataGridView1.DataSource = dtable;
-            }
+            
             catch(Exception ex)
 
             {
@@ -250,6 +237,7 @@ namespace WindowsFormsApp1
 
         private void age_TextChanged(object sender, EventArgs e)
         {
+        }
 
 
         
@@ -260,13 +248,6 @@ namespace WindowsFormsApp1
 
         }
 
-        private void exit_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Are You Sure To Exit Programme ?", "Exit", MessageBoxButtons.OKCancel) == DialogResult.OK)
-            {
-                Application.Exit();
-            }
-
-        }
+  
     }
 }
