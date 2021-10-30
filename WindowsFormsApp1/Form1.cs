@@ -28,6 +28,7 @@ namespace WindowsFormsApp1
 
         private void UserForm_Load(object sender, EventArgs e)
         {
+
             //Change DataGridView Font Color to Black
             this.dataGridView1.ForeColor = Color.Black;
         }
@@ -66,6 +67,7 @@ namespace WindowsFormsApp1
         {
 
         }
+
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
@@ -155,10 +157,13 @@ namespace WindowsFormsApp1
                 MessageBox.Show(ex.Message);
             }
         }
-
+        
         private void button4_Click(object sender, EventArgs e)
         {
-            
+            if (MessageBox.Show("Are You Sure To Exit Programme ?", "Exit", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                Application.Exit();
+            }
         }
 
         private void textBox15_TextChanged(object sender, EventArgs e)
@@ -166,12 +171,5 @@ namespace WindowsFormsApp1
 
         }
 
-        private void exit_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Are You Sure To Exit Program?", "Exit", MessageBoxButtons.OKCancel) == DialogResult.OK)
-            {
-                Application.Exit();
-            }
-        }
     }
 }
