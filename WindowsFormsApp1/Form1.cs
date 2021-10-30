@@ -9,7 +9,7 @@ using MySql.Data.MySqlClient;
 
 namespace WindowsFormsApp1
 {
-   
+
     public partial class UserForm : Form
     {
         string connectionString = ConfigurationManager.ConnectionStrings["Mysql"].ConnectionString;
@@ -23,24 +23,26 @@ namespace WindowsFormsApp1
         {
 
             update.Enabled = false;
+            delete.Enabled = false;
 
             //Change DataGridView Font Color to Black
             this.dataGridView1.ForeColor = Color.Black;
         }
-       
 
-  
+
+
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             update.Enabled = true;
+            delete.Enabled = true;
         }
 
-  /*      private void dataGridView_SelectionChanged(object sender, EventArgs e)
-        {
+        /*      private void dataGridView_SelectionChanged(object sender, EventArgs e)
+              {
 
-        }
-  */
+              }
+        */
 
         private void read_Click(object sender, EventArgs e)
         {
@@ -55,7 +57,7 @@ namespace WindowsFormsApp1
                 myAdapter.Fill(dtable);
                 dataGridView1.DataSource = dtable;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -74,41 +76,52 @@ namespace WindowsFormsApp1
 
         private void add_Click(object sender, EventArgs e)
         {
-            try
+            if (lastname.Text != "" && firstname.Text != "" && houseno.Text != "" && houseno.Text != "" && street.Text != "" && barangay.Text != "" && city.Text != "" && province.Text != "" && zip.Text != "" && gender.Text != "" && age.Text != "")
             {
-                string query = "insert into crud_tbl1(lastname,firstname,middlename,houseno,street,district,barangay,city,province,zipcode,gender,birthday,age) values('" + this.lastname.Text + "' , '" + this.firstname.Text + "' , '" + this.middlename.Text + "' , '" + this.houseno.Text + "' , '" + this.street.Text + "' , '" + this.district.Text + "' , '" + this.barangay.Text + "' , '" + this.city.Text + "' , '" + this.province.Text + "' , '" + this.zip.Text + "' , '" + this.gender.Text + "' , '" + this.birthday.Text + "' , '" + this.age.Text + "');";
-                MySqlConnection mycon = new MySqlConnection(connectionString);
-                MySqlCommand mycommand = new MySqlCommand(query, mycon);
-                MySqlDataReader Reader;
-                mycon.Open();
-                Reader = mycommand.ExecuteReader();
-                string message = "DATA IS INSERTED! PANIS!";
-                string title = "Congratulation!";
-                MessageBox.Show(message, title);
-                mycon.Close();
+                try
+                {
+                    string query = "insert into crud_tbl1(lastname,firstname,middlename,houseno,street,district,barangay,city,province,zipcode,gender,birthday,age) values('" + this.lastname.Text + "' , '" + this.firstname.Text + "' , '" + this.middlename.Text + "' , '" + this.houseno.Text + "' , '" + this.street.Text + "' , '" + this.district.Text + "' , '" + this.barangay.Text + "' , '" + this.city.Text + "' , '" + this.province.Text + "' , '" + this.zip.Text + "' , '" + this.gender.Text + "' , '" + this.birthday.Text + "' , '" + this.age.Text + "');";
+                    MySqlConnection mycon = new MySqlConnection(connectionString);
+                    MySqlCommand mycommand = new MySqlCommand(query, mycon);
+                    MySqlDataReader Reader;
+                    mycon.Open();
+                    Reader = mycommand.ExecuteReader();
+                    string message = "DATA IS INSERTED! PANIS!";
+                    string title = "Congratulation!";
+                    MessageBox.Show(message, title);
+                    mycon.Close();
 
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+                lastname.Text = "";
+                firstname.Text = "";
+                middlename.Text = "";
+                houseno.Text = "";
+                street.Text = "";
+                district.Text = "";
+                barangay.Text = "";
+                city.Text = "";
+                province.Text = "";
+                zip.Text = "";
+                gender.Text = "-Select-";
+                birthday.ResetText();
+                age.Text = "";
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                string message1 = "Empty Text Field";
+                string title1 = "Error!"; 
+                MessageBox.Show(message1, title1);
             }
-
-            lastname.Text = "";
-            firstname.Text = "";
-            middlename.Text = "";
-            houseno.Text = "";
-            street.Text = "";
-            district.Text = "";
-            barangay.Text = "";
-            city.Text = "";
-            province.Text = "";
-            zip.Text = "";
-            gender.Text = "-Select-";
-            birthday.ResetText();
-            age.Text = "";
         }
 
-        private void exit_Click(object sender, EventArgs e)
+
+
+            private void exit_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Are You Sure To Exit Programme ?", "Exit", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
@@ -138,7 +151,7 @@ namespace WindowsFormsApp1
 
         private void delete_Click(object sender, EventArgs e)
         {
-            try
+                try
             {
                 string query = "Delete from crud_tbl1 where id = '" + this.textBoxID.Text + "'";
                 MySqlConnection mycon2 = new MySqlConnection(connectionString);
@@ -175,6 +188,7 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show(ex.Message);
             }
+
         }
 
         private void gender_SelectedIndexChanged(object sender, EventArgs e)
