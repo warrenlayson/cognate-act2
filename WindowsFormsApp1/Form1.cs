@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
 using MySql.Data.MySqlClient;
@@ -18,8 +13,6 @@ namespace WindowsFormsApp1
     public partial class UserForm : Form
     {
         string connectionString = ConfigurationManager.ConnectionStrings["Mysql"].ConnectionString;
-
-        string mycon = "datasource=localhost;username=root;password=;database=act2";
 
         public UserForm()
         {
@@ -143,8 +136,8 @@ namespace WindowsFormsApp1
         {
             try
             {
-                string query = "Select * from users";
-                MySqlConnection mycon2 = new MySqlConnection(mycon);
+                string query = "Select * from crud_tbl1";
+                MySqlConnection mycon2 = new MySqlConnection(connectionString);
                 MySqlCommand mycommand = new MySqlCommand(query, mycon2);
                 MySqlDataAdapter myAdapter = new MySqlDataAdapter();
                 myAdapter.SelectCommand = mycommand;
@@ -156,13 +149,6 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show(ex.Message);
             }
-        }
-        
-   
-
-        private void textBox15_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void exit_Click(object sender, EventArgs e)
