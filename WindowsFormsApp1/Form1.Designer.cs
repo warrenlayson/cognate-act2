@@ -194,7 +194,9 @@ namespace WindowsFormsApp1
             this.age.Size = new System.Drawing.Size(111, 23);
             this.age.TabIndex = 13;
             this.age.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+
             this.age.TextChanged += new System.EventHandler(this.age_TextChanged);
+
             // 
             // add
             // 
@@ -210,7 +212,9 @@ namespace WindowsFormsApp1
             this.add.TabIndex = 14;
             this.add.Text = "Add";
             this.add.UseVisualStyleBackColor = false;
+
             this.add.Click += new System.EventHandler(this.add_Click_1);
+
             // 
             // update
             // 
@@ -309,7 +313,9 @@ namespace WindowsFormsApp1
             this.birthday.Name = "birthday";
             this.birthday.Size = new System.Drawing.Size(256, 26);
             this.birthday.TabIndex = 18;
+
             this.birthday.ValueChanged += new System.EventHandler(this.birthday_ValueChanged);
+
             // 
             // gender
             // 
@@ -332,6 +338,7 @@ namespace WindowsFormsApp1
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(93, 518);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(910, 193);
             this.dataGridView1.TabIndex = 20;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
