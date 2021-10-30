@@ -181,7 +181,6 @@ namespace WindowsFormsApp1
             this.textBox12.TabIndex = 11;
             this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-          
             // age
             // 
             this.age.BackColor = System.Drawing.Color.Gainsboro;
@@ -256,6 +255,7 @@ namespace WindowsFormsApp1
             this.exit.TabIndex = 17;
             this.exit.Text = "Exit";
             this.exit.UseVisualStyleBackColor = false;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // textBoxID
             // 
@@ -305,7 +305,7 @@ namespace WindowsFormsApp1
             this.birthday.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.birthday.Location = new System.Drawing.Point(628, 383);
             this.birthday.Name = "birthday";
-            this.birthday.Size = new System.Drawing.Size(256, 30);
+            this.birthday.Size = new System.Drawing.Size(256, 26);
             this.birthday.TabIndex = 18;
             // 
             // gender
@@ -315,7 +315,7 @@ namespace WindowsFormsApp1
             this.gender.FormattingEnabled = true;
             this.gender.Location = new System.Drawing.Point(438, 383);
             this.gender.Name = "gender";
-            this.gender.Size = new System.Drawing.Size(152, 30);
+            this.gender.Size = new System.Drawing.Size(152, 26);
             this.gender.TabIndex = 19;
             // 
             // dataGridView1
@@ -346,11 +346,10 @@ namespace WindowsFormsApp1
             this.read.Text = "Read";
             this.read.UseVisualStyleBackColor = false;
             this.read.Click += new System.EventHandler(this.read_Click);
-
             // 
             // UserForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
