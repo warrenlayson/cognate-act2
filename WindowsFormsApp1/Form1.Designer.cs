@@ -255,6 +255,7 @@ namespace WindowsFormsApp1
             this.exit.TabIndex = 17;
             this.exit.Text = "Exit";
             this.exit.UseVisualStyleBackColor = false;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // textBoxID
             // 
