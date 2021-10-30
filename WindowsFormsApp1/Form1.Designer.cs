@@ -194,9 +194,6 @@ namespace WindowsFormsApp1
             this.age.Size = new System.Drawing.Size(111, 23);
             this.age.TabIndex = 13;
             this.age.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-
-            this.age.TextChanged += new System.EventHandler(this.age_TextChanged);
-
             // 
             // add
             // 
@@ -212,9 +209,6 @@ namespace WindowsFormsApp1
             this.add.TabIndex = 14;
             this.add.Text = "Add";
             this.add.UseVisualStyleBackColor = false;
-
-            this.add.Click += new System.EventHandler(this.add_Click_1);
-
             // 
             // update
             // 
@@ -313,19 +307,12 @@ namespace WindowsFormsApp1
             this.birthday.Name = "birthday";
             this.birthday.Size = new System.Drawing.Size(256, 26);
             this.birthday.TabIndex = 18;
-
-            this.birthday.ValueChanged += new System.EventHandler(this.birthday_ValueChanged);
-
             // 
             // gender
             // 
             this.gender.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.gender.FormattingEnabled = true;
-            this.gender.Items.AddRange(new object[] {
-            "-Select-",
-            "Female",
-            "Male"});
             this.gender.Location = new System.Drawing.Point(438, 383);
             this.gender.Name = "gender";
             this.gender.Size = new System.Drawing.Size(152, 26);
