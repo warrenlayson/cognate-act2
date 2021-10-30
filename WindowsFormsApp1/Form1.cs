@@ -26,7 +26,8 @@ namespace WindowsFormsApp1
 
         private void UserForm_Load(object sender, EventArgs e)
         {
-
+            //Change DataGridView Font Color to Black
+            this.dataGridView1.ForeColor = Color.Black;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
