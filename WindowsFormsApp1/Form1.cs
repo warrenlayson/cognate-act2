@@ -22,7 +22,7 @@ namespace WindowsFormsApp1
         private void UserForm_Load(object sender, EventArgs e)
         {
 
-            update.Enabled = false;
+           
 
             //Change DataGridView Font Color to Black
             this.dataGridView1.ForeColor = Color.Black;
@@ -64,11 +64,11 @@ namespace WindowsFormsApp1
 
         private void birthday_ValueChanged(object sender, EventArgs e)
         {
-            DateTime from = birthday.Value;
+         /*   DateTime from = birthday.Value;
             DateTime to = DateTime.Now;
             TimeSpan Tspan = to - from;
             double days = Tspan.TotalDays;
-            age.Text = (days / 365).ToString("0");
+            age.Text = (days / 365).ToString("0");  */
         }
 
 
@@ -135,5 +135,47 @@ namespace WindowsFormsApp1
             age.Text = gridViewRow.Cells[13].Value.ToString();
 
         }
+
+        private void delete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string query = "Delete from crud_tbl1 where id = '" + this.textBoxID.Text + "'";
+                MySqlConnection mycon2 = new MySqlConnection(connectionString);
+                MySqlCommand mycommand = new MySqlCommand(query, mycon2);
+                MySqlDataReader MyReader1;
+                mycon2.Open();
+                MyReader1 = mycommand.ExecuteReader();
+                MessageBox.Show("Data is Deleted");
+
+                mycon2.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void update_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string date = birthday.Value.Date.ToString("yyyy-MM-dd");
+                string query = "update crud_tbl1 set lastname = '" + this.lastname.Text + "', firstname = '" + this.firstname.Text + "', middlename = '" + this.middlename.Text + "', houseno = '" + this.houseno.Text + "', street = '" + this.street.Text + "', district = '" + this.district.Text + "' , barangay = '" + this.barangay.Text + "' , city = '" + this.city.Text + "' , province = '" + this.province.Text + "' , zipcode = '" + this.zip.Text + "' , gender = '" + this.gender.Text + "' , birthday = '" + date + "' , age = '" + this.age.Text + "' where id = '" + this.textBoxID.Text + "';";
+                MySqlConnection mycon2 = new MySqlConnection(connectionString);
+                MySqlCommand mycommand = new MySqlCommand(query, mycon2);
+                MySqlDataReader MyReader1;
+                mycon2.Open();
+                MyReader1 = mycommand.ExecuteReader();
+                MessageBox.Show("Data is Updated");
+
+                mycon2.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
-}
+    }
+
