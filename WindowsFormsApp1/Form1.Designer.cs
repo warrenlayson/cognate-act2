@@ -181,6 +181,7 @@ namespace WindowsFormsApp1
             this.textBox12.TabIndex = 11;
             this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+          
             // age
             // 
             this.age.BackColor = System.Drawing.Color.Gainsboro;
@@ -345,6 +346,7 @@ namespace WindowsFormsApp1
             this.read.Text = "Read";
             this.read.UseVisualStyleBackColor = false;
             this.read.Click += new System.EventHandler(this.read_Click);
+
             // 
             // UserForm
             // 
