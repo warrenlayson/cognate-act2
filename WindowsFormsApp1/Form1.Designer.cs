@@ -82,7 +82,6 @@ namespace WindowsFormsApp1
             this.houseno.Size = new System.Drawing.Size(71, 25);
             this.houseno.TabIndex = 4;
             this.houseno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            
             // 
             // street
             // 
@@ -97,7 +96,6 @@ namespace WindowsFormsApp1
             this.street.Size = new System.Drawing.Size(135, 25);
             this.street.TabIndex = 5;
             this.street.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            
             // 
             // district
             // 
@@ -112,7 +110,6 @@ namespace WindowsFormsApp1
             this.district.Size = new System.Drawing.Size(112, 25);
             this.district.TabIndex = 6;
             this.district.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-           
             // 
             // barangay
             // 
@@ -127,7 +124,6 @@ namespace WindowsFormsApp1
             this.barangay.Size = new System.Drawing.Size(210, 25);
             this.barangay.TabIndex = 7;
             this.barangay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            
             // 
             // city
             // 
@@ -142,7 +138,6 @@ namespace WindowsFormsApp1
             this.city.Size = new System.Drawing.Size(169, 24);
             this.city.TabIndex = 8;
             this.city.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-           
             // 
             // province
             // 
@@ -157,7 +152,6 @@ namespace WindowsFormsApp1
             this.province.Size = new System.Drawing.Size(216, 24);
             this.province.TabIndex = 9;
             this.province.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-           
             // 
             // zip
             // 
@@ -172,7 +166,6 @@ namespace WindowsFormsApp1
             this.zip.Size = new System.Drawing.Size(158, 24);
             this.zip.TabIndex = 10;
             this.zip.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            
             // 
             // textBox12
             // 
@@ -201,7 +194,7 @@ namespace WindowsFormsApp1
             this.age.Size = new System.Drawing.Size(111, 23);
             this.age.TabIndex = 13;
             this.age.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-         
+            this.age.TextChanged += new System.EventHandler(this.age_TextChanged);
             // 
             // add
             // 
@@ -217,7 +210,7 @@ namespace WindowsFormsApp1
             this.add.TabIndex = 14;
             this.add.Text = "Add";
             this.add.UseVisualStyleBackColor = false;
-            
+            this.add.Click += new System.EventHandler(this.add_Click_1);
             // 
             // update
             // 
@@ -233,7 +226,7 @@ namespace WindowsFormsApp1
             this.update.TabIndex = 15;
             this.update.Text = "Update";
             this.update.UseVisualStyleBackColor = false;
-            
+            this.update.Click += new System.EventHandler(this.update_Click);
             // 
             // delete
             // 
@@ -249,7 +242,6 @@ namespace WindowsFormsApp1
             this.delete.TabIndex = 16;
             this.delete.Text = "Delete";
             this.delete.UseVisualStyleBackColor = false;
-           
             // 
             // exit
             // 
@@ -265,6 +257,7 @@ namespace WindowsFormsApp1
             this.exit.TabIndex = 17;
             this.exit.Text = "Exit";
             this.exit.UseVisualStyleBackColor = false;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // textBoxID
             // 
@@ -279,7 +272,6 @@ namespace WindowsFormsApp1
             this.textBoxID.Size = new System.Drawing.Size(174, 31);
             this.textBoxID.TabIndex = 0;
             this.textBoxID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            
             // 
             // lastname
             // 
@@ -294,7 +286,6 @@ namespace WindowsFormsApp1
             this.lastname.Size = new System.Drawing.Size(152, 25);
             this.lastname.TabIndex = 1;
             this.lastname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-           
             // 
             // firstname
             // 
@@ -309,7 +300,6 @@ namespace WindowsFormsApp1
             this.firstname.Size = new System.Drawing.Size(198, 25);
             this.firstname.TabIndex = 2;
             this.firstname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            
             // 
             // birthday
             // 
@@ -319,18 +309,21 @@ namespace WindowsFormsApp1
             this.birthday.Name = "birthday";
             this.birthday.Size = new System.Drawing.Size(256, 26);
             this.birthday.TabIndex = 18;
-            
+            this.birthday.ValueChanged += new System.EventHandler(this.birthday_ValueChanged);
             // 
             // gender
             // 
             this.gender.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.gender.FormattingEnabled = true;
+            this.gender.Items.AddRange(new object[] {
+            "-Select-",
+            "Female",
+            "Male"});
             this.gender.Location = new System.Drawing.Point(438, 383);
             this.gender.Name = "gender";
-            this.gender.Size = new System.Drawing.Size(152, 28);
+            this.gender.Size = new System.Drawing.Size(152, 26);
             this.gender.TabIndex = 19;
-           
             // 
             // dataGridView1
             // 
@@ -341,6 +334,7 @@ namespace WindowsFormsApp1
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(910, 193);
             this.dataGridView1.TabIndex = 20;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // read
             // 
@@ -357,11 +351,11 @@ namespace WindowsFormsApp1
             this.read.TabIndex = 21;
             this.read.Text = "Read";
             this.read.UseVisualStyleBackColor = false;
-           
+            this.read.Click += new System.EventHandler(this.read_Click);
             // 
             // UserForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
