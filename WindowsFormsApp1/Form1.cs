@@ -22,8 +22,7 @@ namespace WindowsFormsApp1
         private void UserForm_Load(object sender, EventArgs e)
         {
 
-            update.Enabled = false;
-            delete.Enabled = false;
+          
             //Change DataGridView Font Color to Black
             this.dataGridView1.ForeColor = Color.Black;
         }
@@ -71,13 +70,14 @@ namespace WindowsFormsApp1
             {
                 try
                 {
-                    string query = "insert into crud_tbl1(lastname,firstname,middlename,houseno,street,district,barangay,city,province,zipcode,gender,birthday,age) values('" + this.lastname.Text + "' , '" + this.firstname.Text + "' , '" + this.middlename.Text + "' , '" + this.houseno.Text + "' , '" + this.street.Text + "' , '" + this.district.Text + "' , '" + this.barangay.Text + "' , '" + this.city.Text + "' , '" + this.province.Text + "' , '" + this.zip.Text + "' , '" + this.gender.Text + "' , '" + this.birthday.Text + "' , '" + this.age.Text + "');";
+                    string date = birthday.Value.Date.ToString("yyyy-MM-dd");
+                    string query = "insert into crud_tbl1(lastname,firstname,middlename,houseno,street,district,barangay,city,province,zipcode,gender,birthday,age) values('" + this.lastname.Text + "' , '" + this.firstname.Text + "' , '" + this.middlename.Text + "' , '" + this.houseno.Text + "' , '" + this.street.Text + "' , '" + this.district.Text + "' , '" + this.barangay.Text + "' , '" + this.city.Text + "' , '" + this.province.Text + "' , '" + this.zip.Text + "' , '" + this.gender.Text + "' , '" + date + "' , '" + this.age.Text + "');";
                     MySqlConnection mycon = new MySqlConnection(connectionString);
                     MySqlCommand mycommand = new MySqlCommand(query, mycon);
                     MySqlDataReader Reader;
                     mycon.Open();
                     Reader = mycommand.ExecuteReader();
-                    string message = "DATA IS INSERTED! PANIS!";
+                    string message = "DATA IS INSERTED!";
                     string title = "Congratulation!";
                     MessageBox.Show(message, title);
                     mycon.Close();
@@ -122,6 +122,7 @@ namespace WindowsFormsApp1
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+           
             DataGridViewRow gridViewRow = dataGridView1.Rows[e.RowIndex];
             textBoxID.Text = gridViewRow.Cells[0].Value.ToString();
             lastname.Text = gridViewRow.Cells[1].Value.ToString();
@@ -138,6 +139,8 @@ namespace WindowsFormsApp1
             //    birthday.Text = gridViewRow.Cells[11].Value.ToString();
             age.Text = gridViewRow.Cells[13].Value.ToString();
 
+            update.Enabled = true;
+            delete.Enabled = true;
         }
 
         private void delete_Click(object sender, EventArgs e)
@@ -150,7 +153,7 @@ namespace WindowsFormsApp1
                 MySqlDataReader MyReader1;
                 mycon2.Open();
                 MyReader1 = mycommand.ExecuteReader();
-                MessageBox.Show("Data is Deleted");
+                MessageBox.Show("Data is Deleted!");
 
                 mycon2.Close();
             }
@@ -162,7 +165,9 @@ namespace WindowsFormsApp1
 
         private void update_Click(object sender, EventArgs e)
         {
-            try
+            if (lastname.Text != "" && firstname.Text != "" && houseno.Text != "" && houseno.Text != "" && street.Text != "" && barangay.Text != "" && city.Text != "" && province.Text != "" && zip.Text != "" && gender.Text != "" && age.Text != "")
+            {
+                try
             {
                 string date = birthday.Value.Date.ToString("yyyy-MM-dd");
                 string query = "update crud_tbl1 set lastname = '" + this.lastname.Text + "', firstname = '" + this.firstname.Text + "', middlename = '" + this.middlename.Text + "', houseno = '" + this.houseno.Text + "', street = '" + this.street.Text + "', district = '" + this.district.Text + "' , barangay = '" + this.barangay.Text + "' , city = '" + this.city.Text + "' , province = '" + this.province.Text + "' , zipcode = '" + this.zip.Text + "' , gender = '" + this.gender.Text + "' , birthday = '" + date + "' , age = '" + this.age.Text + "' where id = '" + this.textBoxID.Text + "';";
@@ -171,13 +176,33 @@ namespace WindowsFormsApp1
                 MySqlDataReader MyReader1;
                 mycon2.Open();
                 MyReader1 = mycommand.ExecuteReader();
-                MessageBox.Show("Data is Updated");
+                MessageBox.Show("Data is Updated!");
 
                 mycon2.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+                lastname.Text = "";
+                firstname.Text = "";
+                middlename.Text = "";
+                houseno.Text = "";
+                street.Text = "";
+                district.Text = "";
+                barangay.Text = "";
+                city.Text = "";
+                province.Text = "";
+                zip.Text = "";
+                gender.Text = "-Select-";
+                birthday.ResetText();
+                age.Text = "";
+            }
+            else
+            {
+                string message1 = "Empty Text Field";
+                string title1 = "Error!";
+                MessageBox.Show(message1, title1);
             }
         }
 
@@ -188,4 +213,5 @@ namespace WindowsFormsApp1
 
     }
 }
+
 
