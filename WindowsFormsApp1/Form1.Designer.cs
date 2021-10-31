@@ -309,7 +309,7 @@ namespace WindowsFormsApp1
             this.birthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.birthday.Location = new System.Drawing.Point(628, 383);
             this.birthday.Name = "birthday";
-            this.birthday.Size = new System.Drawing.Size(256, 24);
+            this.birthday.Size = new System.Drawing.Size(256, 33);
             this.birthday.TabIndex = 18;
             this.birthday.ValueChanged += new System.EventHandler(this.birthday_ValueChanged);
             // 
@@ -323,7 +323,7 @@ namespace WindowsFormsApp1
             "Male"});
             this.gender.Location = new System.Drawing.Point(438, 383);
             this.gender.Name = "gender";
-            this.gender.Size = new System.Drawing.Size(152, 26);
+            this.gender.Size = new System.Drawing.Size(152, 37);
             this.gender.TabIndex = 19;
             this.gender.SelectedIndexChanged += new System.EventHandler(this.gender_SelectedIndexChanged);
             // 
@@ -359,7 +359,7 @@ namespace WindowsFormsApp1
             // 
             // UserForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));

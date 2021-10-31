@@ -24,13 +24,9 @@ namespace WindowsFormsApp1
 
             update.Enabled = false;
             delete.Enabled = false;
-
             //Change DataGridView Font Color to Black
             this.dataGridView1.ForeColor = Color.Black;
         }
-
-
-
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -38,11 +34,6 @@ namespace WindowsFormsApp1
             delete.Enabled = true;
         }
 
-        /*      private void dataGridView_SelectionChanged(object sender, EventArgs e)
-              {
-
-              }
-        */
 
         private void read_Click(object sender, EventArgs e)
         {
@@ -66,11 +57,11 @@ namespace WindowsFormsApp1
 
         private void birthday_ValueChanged(object sender, EventArgs e)
         {
-            DateTime from = birthday.Value;
+         /*   DateTime from = birthday.Value;
             DateTime to = DateTime.Now;
             TimeSpan Tspan = to - from;
             double days = Tspan.TotalDays;
-            age.Text = (days / 365).ToString("0");
+            age.Text = (days / 365).ToString("0");  */
         }
 
 
@@ -151,7 +142,7 @@ namespace WindowsFormsApp1
 
         private void delete_Click(object sender, EventArgs e)
         {
-                try
+            try
             {
                 string query = "Delete from crud_tbl1 where id = '" + this.textBoxID.Text + "'";
                 MySqlConnection mycon2 = new MySqlConnection(connectionString);
@@ -188,12 +179,12 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
 
         private void gender_SelectedIndexChanged(object sender, EventArgs e)
         {
             
         }
+
     }
-}
+
