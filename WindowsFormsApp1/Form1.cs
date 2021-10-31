@@ -57,11 +57,11 @@ namespace WindowsFormsApp1
 
         private void birthday_ValueChanged(object sender, EventArgs e)
         {
-         /*   DateTime from = birthday.Value;
+            DateTime from = birthday.Value;
             DateTime to = DateTime.Now;
             TimeSpan Tspan = to - from;
             double days = Tspan.TotalDays;
-            age.Text = (days / 365).ToString("0");  */
+            age.Text = (days / 365).ToString("0");
         }
 
 
@@ -105,14 +105,14 @@ namespace WindowsFormsApp1
             else
             {
                 string message1 = "Empty Text Field";
-                string title1 = "Error!"; 
+                string title1 = "Error!";
                 MessageBox.Show(message1, title1);
             }
         }
 
 
 
-            private void exit_Click(object sender, EventArgs e)
+        private void exit_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Are You Sure To Exit Programme ?", "Exit", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
@@ -135,7 +135,7 @@ namespace WindowsFormsApp1
             province.Text = gridViewRow.Cells[9].Value.ToString();
             zip.Text = gridViewRow.Cells[10].Value.ToString();
             gender.Text = gridViewRow.Cells[11].Value.ToString();
-        //    birthday.Text = gridViewRow.Cells[11].Value.ToString();
+            //    birthday.Text = gridViewRow.Cells[11].Value.ToString();
             age.Text = gridViewRow.Cells[13].Value.ToString();
 
         }
@@ -183,8 +183,9 @@ namespace WindowsFormsApp1
 
         private void gender_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
     }
+}
 
